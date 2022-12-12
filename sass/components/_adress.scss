@@ -1,0 +1,55 @@
+.two-columns{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__text,
+.form__text{
+    color: $white;
+    font-weight: 700;
+font-size: 14px;
+line-height: calc(16/14);
+letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.adress{
+    margin-top: 20px;
+}
+.adress__list{
+    margin-right: 90px; 
+    width: 220px;
+    
+}
+.adress__place{
+    color: $primary-background;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    margin-bottom: 9px;
+    transition: color $time $cubic;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+.adress__item{
+    margin-bottom: 9px;
+}
+.adress__item--sec:not(:last-child){
+    margin-bottom: 9px;
+}
+.adress__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(21/14);
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+    }
+    

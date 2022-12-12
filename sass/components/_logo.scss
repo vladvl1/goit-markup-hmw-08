@@ -1,0 +1,13 @@
+.logo{
+    color: $accent-color;
+    font-family:$secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(30/25);
+   }
+   .logo--part{
+    color:$title-text-color;
+}
+.logo--footer-part{
+    color: $primary-background;
+}

@@ -1,0 +1,28 @@
+.we-do{
+    display: flex;
+}
+
+.we-do__text{
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16/14);
+text-align: center;
+text-transform: uppercase;
+color:$white;
+}
+.we-do__item{
+    position: relative;
+    &+.we-do__item{
+        margin-left: 30px;
+    }
+}
+.we-do__box{
+    background-color:rgba(47, 48, 58, 0.8); 
+    position: absolute;
+    bottom: 0;
+    min-height: 70px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

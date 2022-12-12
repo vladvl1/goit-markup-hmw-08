@@ -1,0 +1,29 @@
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.footer{
+    background-color: $background-hero;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+ }
+ .team{
+    background-color:$secondary-background;
+    }
+    
+.section__title,
+.features__title{
+  color: $title-text-color;  
+}
+.section__title{
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    line-height: calc(42/36);
+    text-align: center;
+    }

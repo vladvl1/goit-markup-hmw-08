@@ -1,0 +1,17 @@
+h1,h2,h3,a,p,li,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+ul {
+    list-style:none;
+}
+
+.section.no_padding{
+    padding-top: 0;
+    }
+.link,
+.adress,
+.auth{
+   text-decoration: none; 
+}

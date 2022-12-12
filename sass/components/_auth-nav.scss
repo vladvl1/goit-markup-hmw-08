@@ -1,0 +1,45 @@
+
+.auth-nav{
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    .auth-nav__ref:hover &,
+    .auth-nav__ref:focus &{
+        color: $accent-color;
+    }
+    
+}
+
+.auth-nav__ref{
+    display: flex;
+    align-items: center;
+    color: $primary-text-color;
+    text-decoration:none ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/12);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $time $cubic;
+    &:focus,
+    &:hover{
+        color: $accent-color;
+    }
+   
+}
+.auth-nav__item + .auth-nav__item{
+    margin-left: 50px; 
+}
+
+.auth-nav__icon--envelope{
+width: 16px;
+height: 13px;   
+margin-right: 10px;
+fill: currentColor;
+}
+.auth-nav__icon--telefon{
+    width: 12px;
+    height: 16px; 
+    margin-right: 10px;  
+    fill: currentColor;
+    }
