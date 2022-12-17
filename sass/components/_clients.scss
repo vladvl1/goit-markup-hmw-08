@@ -1,19 +1,24 @@
-.clients{
-    text-align: center;
-    line-height: calc(42/36);
-    font-size: 36px;
-    color: $title-text-color;
-    margin-bottom: 50px;
-}
 .clients__list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    @media screen and (min-width:$desktop){
+        flex-wrap: nowrap;
+    }
 }
 .clients__item{
-    width: 170px;
+    width: calc((100% - 2*30px)/2);
     height: 92px;
+    @media screen and (min-width:$tablet){
+      width: calc((100% - 3*30px)/3);
+    
+    }
+    @media screen and (min-width:$desktop){
+        width: 170px;
+    
+    }
 }
  
 .clients__ref{

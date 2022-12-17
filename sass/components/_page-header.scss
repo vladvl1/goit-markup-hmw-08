@@ -1,4 +1,12 @@
 .page-header{
     display: flex;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and(min-width:$tablet){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }

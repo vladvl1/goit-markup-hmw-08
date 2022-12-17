@@ -2,6 +2,7 @@ h1,h2,h3,a,p,li,ul{
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    font-style: normal
   }
 ul {
     list-style:none;
@@ -9,6 +10,9 @@ ul {
 
 .section.no_padding{
     padding-top: 0;
+    @media screen  and (max-width:calc($desktop - 1px)){
+        display: none;
+    }
     }
 .link,
 .adress,

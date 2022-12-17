@@ -1,7 +1,13 @@
 .card__list{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px; 
+    @media screen and(min-width:$tablet){
+        justify-content: initial;
+    }
+    justify-content: initial;
+
 }
 .card__ref{
     text-decoration: none;
@@ -32,11 +38,14 @@
     
     .card__item{
         background: $white;
-        margin-bottom: 30px;
-
-        &:nth-child(n+7){
-            margin-bottom: 0;
-           }
+        @media screen and (min-width:$tablet) and(max-width:calc($desktop - 1px)){
+            
+            width: calc((100% - 60px)/2);
+            }
+            @media screen and(min-width:$desktop){
+                
+                width: calc((100% - 90px)/3);
+            }
 
        }
 

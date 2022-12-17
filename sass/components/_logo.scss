@@ -2,11 +2,25 @@
     color: $accent-color;
     font-family:$secondary-font;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(30/25);
+    font-size: 24px;
+    line-height: calc(28/24);
+    
+    @media screen and(min-width:$desktop){
+        font-size: 26px;
+        line-height: calc(31/26);
+    }
+   
    }
    .logo--part{
     color:$title-text-color;
+}
+.logo--footer{
+    color: $accent-color;
+    font-family:$secondary-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    
 }
 .logo--footer-part{
     color: $primary-background;

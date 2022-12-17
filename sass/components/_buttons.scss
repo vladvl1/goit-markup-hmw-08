@@ -24,6 +24,7 @@
  .button--footer{
     display: flex;
     align-items: center;
+    margin-top: 20px;
     color: $primary-background;
     background-color: $accent-color;
     border-color: transparent;
@@ -36,6 +37,9 @@
     padding: 10px 28px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    @media screen and(min-width:$desktop){
+      margin-top: 0;
+    }
     
  } 
  .button--portfolio{
@@ -99,4 +103,9 @@ transition: background-color $time $cubic;
 &:focus{
     background-color: $button-hover;
 }
+ }
+ .mobile-menu__button{
+   width: 40px;
+   height: 40px;
+   fill: $black;
  }

@@ -24,11 +24,17 @@
             <li class="auth-nav__item"><a href="mailto.info@devstudio.com" class="auth-nav__ref link">
                 <svg class="auth-nav__icon--envelope">
                     <use href="./images/svg/symbol-defs.svg#envelope"></use>
-        </svg>info@devstudio.com </a></li>
+        </svg>info@devstudio.com</a></li>
             <li class="auth-nav__item"><a href="tel:+380961111111" class="auth-nav__ref link"><svg class="auth-nav__icon--telefon">
                 <use href="./images/svg/symbol-defs.svg#smartphone"></use>
     </svg> +38 096 111 11 11</a></li>
-        </ul>
+</ul>
+<button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mobile-menu__button"><use href="./images/svg/symbol-defs.svg#bars"></use></svg>
+        </button>
         </div>
         </header>
               <main>
@@ -74,19 +80,19 @@
             <h2 class="section__title">Чим ми займаємося</h2>
             <ul class="we-do">
                  <li class="we-do__item">
-                    <img src="./images/box1.jpg" alt="десктопні додатки" width="370" >
+                    <img src="./images/wedo/box1@2x.jpg" alt="десктопні додатки" width="370" srcset="./images/wedo/box1.jpg 1x, ./images/wedo/box1@2x.jpg 2x">
                     <div class="we-do__box">
                         <p class="we-do__text">десктопні додатки</p>
                     </div>
                     </li>
                  <li class="we-do__item">
-                    <img src="./images/box2.jpg" alt="мобільні додатки" width="370" >
+                    <img src="./images/wedo/box2@2x.jpg" alt="мобільні додатки" width="370" srcset="./images/wedo/box2.jpg 1x, ./images/wedo/box2@2x.jpg 2x">
                     <div class="we-do__box">
                         <p class="we-do__text">мобільні додатки</p>
                     </div>
                    </li>    
                  <li class="we-do__item">
-                    <img src="./images/box3.jpg" alt="дизайнерські рішення" width="370" >
+                    <img src="./images/wedo/box3@2x.jpg" alt="дизайнерські рішення" width="370" srcset="./images/wedo/box3.jpg 1x, ./images/wedo/box3@2x.jpg 2x">
                     <div class="we-do__box">
                         <p class="we-do__text">дизайнерські рішення</p>
                     </div>
@@ -98,7 +104,17 @@
                 <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__list">
-              <li class="team__picture"><img src="./images/igor.jpg" alt="Ігор" width="270">
+              <li class="team__picture"><img src="./images/team/imgm_igor@450.jpg" alt="Ігор" srcset="
+                ./images/team/igor@270.jpg 270w,
+                ./images/team/imgt_ugor@354.jpg 354w,
+                ./images/team/imgm_igor@450.jpg 450w,
+                ./images/team/imgigor@540.jpg 540w,
+                ./images/team/imgt_igor@708.jpg 708w,
+                ./images/team/imgm_igor@900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw" 
+                width="480"
+                height="460">
             <h3 class="team__member">Ігор Дем'яненко</h3>
             <p lang="en" class="team__text">Product Designer</p>
             <ul class="socials">
@@ -107,7 +123,16 @@
             <li class="socials__item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="socials__link"><svg class="socials__icon"><use href="./images/svg/symbol-defs.svg#facebook"></use></svg></a></li>
             <li class="socials__item"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="socials__link"><svg class="socials__icon"><use href="./images/svg/symbol-defs.svg#linkedin"></use></svg></a></li></ul>
             </li>
-              <li class="team__picture"><img src="./images/olga.jpg" alt="Ольга" width="270">
+            <li class="team__picture"><img src="./images/team/imgolga@450.jpg" alt="Михайло" srcset="
+                ./images/team/imgolga@270.jpg 270w,
+                ./images/team/imgolga@354.jpg 354w,
+                ./images/team/imgolga@450.jpg 450w,
+                ./images/team/imgolga@540.jpg 540w,
+                ./images/team/imgolga@708.jpg 708w,
+                ./images/team/imgolga@900.jpg 900w,
+                " sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw" 
+                width="480"
+                height="460">
             <h3 class="team__member">Ольга Рєпіна</h3>
             <p lang="en" class="team__text">Frontend Developer</p>
             <ul class="socials">
@@ -116,7 +141,16 @@
             <li class="socials__item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="socials__link"><svg class="socials__icon"><use href="./images/svg/symbol-defs.svg#facebook"></use></svg></a></li>
             <li class="socials__item"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="socials__link"><svg class="socials__icon"><use href="./images/svg/symbol-defs.svg#linkedin"></use></svg></a></li></ul>
             </li>
-              <li class="team__picture"><img src="./images/mykola.jpg" alt="Микола" width="270">
+            <li class="team__picture"><img src="./images/team/imgmykola@450.jpg" alt="Михайло" srcset="
+                ./images/team/imgmykola@270.jpg 270w,
+                ./images/team/imgmykola@354.jpg 354w,
+                ./images/team/imgmykola@450.jpg 450w,
+                ./images/team/imgmykola@540.jpg 540w,
+                ./images/team/imgmykola@708.jpg 708w,
+                ./images/team/imgmykola@900.jpg 900w,
+                " sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw" 
+                width="480"
+                height="460">
             <h3 class="team__member">Микола Тарасов</h3> 
             <p lang="en" class="team__text">Marketing</p>
             <ul class="socials">
@@ -125,7 +159,16 @@
             <li class="socials__item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="socials__link"><svg class="socials__icon"><use href="./images/svg/symbol-defs.svg#facebook"></use></svg></a></li>
             <li class="socials__item"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="socials__link"><svg class="socials__icon"><use href="./images/svg/symbol-defs.svg#linkedin"></use></svg></a></li></ul>
             </li>
-              <li class="team__picture"><img src="./images/mikhailo.jpg" alt="Михайло" width="270">
+              <li class="team__picture"><img src="./images/team/imgmykhailo@450.jpg" alt="Михайло" srcset="
+                ./images/team/imgmykhailo@270.jpg 270w,
+                ./images/team/imgmykhailo@354.jpg 354w,
+                ./images/team/imgmykhailo@450.jpg 450w,
+                ./images/team/imgmykhailo@540.jpg 540w,
+                ./images/team/imgmykhailo@708.jpg 708w,
+                ./images/team/imgmykhailo@900.jpg 900w,
+                " sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw" 
+                width="480"
+                height="460">
             <h3 class="team__member">Михайло Єрмаков</h3>
             <p lang="en" class="team__text">UI Designer</p>
             <ul class="socials">
@@ -139,7 +182,7 @@
         </section>
         <section class="section">
             <div class="container">
-            <h2 class="clients">Постійні клієнти</h2>
+            <h2 class="section__title">Постійні клієнти</h2>
             <ul class="clients__list">
                 <li class="clients__item"><a href="" target="_blank" rel="noopener noreferrer" class="clients__ref"><svg class="clients__icon"><use href="./images/svg/symbol-defs.svg#Logo1"></use></svg></a></li>
                 <li class="clients__item"><a href="" target="_blank" rel="noopener noreferrer" class="clients__ref"><svg class="clients__icon"><use href="./images/svg/symbol-defs.svg#Logo2"></use></svg></a></li>
@@ -153,8 +196,9 @@
         </main>
        <footer class="footer">
         <div class="container two-columns">
-            <div>
-               <a href ="" class="logo link">Web<span class="logo--footer-part">Studio</span></a>
+            <div class="tablet-footer">
+            <div class="first-column">
+               <a href ="" class="logo--footer link">Web<span class="logo--footer-part">Studio</span></a>
                <address class="adress">
         <ul class="adress__list">
                 <li class="adress__item"><a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5362025,17z/data=!4m13!1m7!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4265807!4d30.5383858!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=RU" 
@@ -173,6 +217,7 @@
                 <li class="footer-socials__item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="footer-socials__link"><svg class="footer-socials__icon"><use href="./images/svg/symbol-defs.svg#facebook"></use></svg></a></li>
                 <li class="footer-socials__item"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-socials__link"><svg class="footer-socials__icon"><use href="./images/svg/symbol-defs.svg#linkedin"></use></svg></a></li></ul>
         </div>
+    </div>
         <div class="form__box">
             <p class="form__text">Підпишіться на розсилку</p>
             <form class="form">
@@ -224,6 +269,43 @@
         </form>
     </div>
        </div>
+
+
+       
+       
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu-cross"><use href="./images/svg/symbol-defs.svg#mobile-menu-cross"></use></svg>
+        
+        </button>
+  
+        <ul class="mobile-menu">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__links site-nav__links--current link">Студія</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__links link">Портфоліо</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__links link">Контакти</a></li>
+            
+        </ul>
+        <ul>
+            <li class="mobile-auth__item"><a href="tel:+380961111111" class="mobile-auth__number link"> +38 096 111 11 11</a></li>
+            <li class="mobile-auth__item"><a href="mailto.info@devstudio.com" class="mobile-auth__mail link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="mobile-socials__link">Instagram</a></li>
+                <li class="mobile-socials__item"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="mobile-socials__link">Twitter</a></li>
+                <li class="mobile-socials__item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="mobile-socials__link">Facebook</a></li>
+                <li class="mobile-socials__item"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="mobile-socials__link">LinkedIn</a></li>
+        </ul>
+      
+      </div>
+
+
        <script src="./js/modal.js"></script>
+       <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+       <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

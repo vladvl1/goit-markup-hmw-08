@@ -2,33 +2,66 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:270px;
-    height:120px;
     background-color: $secondary-background;
     margin-bottom: 30px;
     gap: 30px;
+    min-height:120px;
+
+    @media screen and (min-width:$mobile){
+    width: 100%;
+    }
+
+    @media screen and (min-width:$tablet){
+    width:354px;
+    }
+
+    @media screen and (min-width:$desktop){
+    width:270px;
+    }
 }
+
 .features__icon{
     width: 70px;
     height: 70px;
 }
-.features{
+.features{ 
+  @media screen and (min-width:$tablet){
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+  @media screen and (min-width:$desktop){
+    flex-wrap: nowrap;
+    
+  }
+    
 }
 .features__item{
-    min-height: 270px;
+    @media screen and (max-width:calc($tablet - 1px)){
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+    }
+    
+    @media screen and (min-width:$tablet)and (max-width:calc($desktop - 1px)){
+        margin-bottom: 0;
+        width: calc((100% - 60px)/2);
+    }
 }
 
- .features__item+.features__item{
-margin-left: 30px;
-}
+ 
 .features__title{
+    display: flex;
+    justify-content: center;
     font-size: 14px;
     line-height: calc(16/14);
     text-transform: uppercase;
     margin-bottom: 10px;
     color: $title-text-color;
+    @media screen and(min-width:$tablet){
+        display: block;
+    }
 }
 .features__text{
     font-size: 14px;
