@@ -17,6 +17,10 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(1.2);
     }
+    @media screen and(max-width:391px){
+        width: 360px;
+        height: 650px;
+    }
     @media screen and(min-width:$tablet)and(max-width:calc($desktop - 1px)){
        width: 450px;
        height: 630px;
