@@ -3,6 +3,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 95%;
+    height: 75%;
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
     background-color: $white;
@@ -15,7 +17,19 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(1.2);
     }
-}
+    @media screen and(min-width:$tablet)and(max-width:calc($desktop - 1px)){
+       width: 450px;
+       height: 610px;
+    }
+    @media screen and(min-width:$desktop){
+        width:528px;
+        height: initial;
+    }
+    }
+    
+        
+    
+
 
 .modal-form__group{
     margin-bottom: 20px;
